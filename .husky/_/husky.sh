@@ -1,6 +1,6 @@
 echo "husky - DEPRECATED
 
-Please remove the following two lines from $0:
+Please remove the following lines from your hook scripts:
 
 #!/usr/bin/env sh
 . \"\$(dirname -- \"\$0\")/_/husky.sh\"

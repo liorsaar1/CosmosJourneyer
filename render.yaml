@@ -1,0 +1,13 @@
+services:
+    - type: web
+      name: cosmos-journeyer
+      runtime: node
+      region: oregon
+      plan: free
+      branch: main
+      buildCommand: "npm install -g pnpm@9.15.9 && pnpm install --frozen-lockfile && pnpm build"
+      startCommand: "node server.js"
+      healthCheckPath: /
+      envVars:
+          - key: NODE_VERSION
+            value: "20.19.0"
